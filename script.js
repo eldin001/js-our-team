@@ -9,35 +9,33 @@ Stampare le stesse informazioni su DOM sottoforma di stringhe */
 
 let employees = [
     employee1 = {
-        firstName: ;
-        role: :
-        image: ;
+        firstName: 'Wayne Barnett',
+        role: 'Founder & CEO',
+        image:'wayne-barnett-founder-ceo.jpg'
     },
     employee2 = {
-        firstName: ;
-        role: :
-        image: ;
+        firstName:'Angela Caroll',
+        role:' Chief Editor',
+        image: 'angela-caroll-chief-editor.jpg'
     },
     employee3 = {
-        firstName: ;
-        role: :
-        image: ;
+        firstName: 'Walter Gordon',
+        role: 'Office Manager',
+        image: 'walter-gordon-office-manager.jpg'
     },
     employee4 = {
-        firstName: ;
-        role: :
-        image: ;
+        firstName: 'Angela Lopez',
+        role: 'Social Media Manager',
+        image: 'angela-lopez-social-media-manager.jpg'
     },
     employee5 = {
-        firstName: ;
-        role: :
-        image: ;
+        firstName: 'Scott Estrada',
+        role: 'Developer',
+        image: 'scott-estrada-developer.jpg'
     },
     employee6 = {
-        firstName: ;
-        role: :
-        image: ;
+        firstName: 'Barbara Ramos',
+        role: 'Graphic Designer',
+        image: 'barbara-ramos-graphic-designer.jpg'
     }
-
-
 ]
