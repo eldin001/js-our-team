@@ -1,7 +1,7 @@
 /* Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
 Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 MILESTONE 0:
-Creare l’array di oggetti con le informazioni fornite.
+Creare l’array di oggetti con le informazioni fornite. done
 MILESTONE 1:
 Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 MILESTONE 2:
@@ -39,3 +39,10 @@ let employees = [
         image: 'barbara-ramos-graphic-designer.jpg'
     }
 ]
+/* for(let i = 0; i < employees.length; i++) {
+    console.log(employees[i].firstName, employees[i].role, employees[i].image);
+} */
+
+for (let info of employees) {
+    console.log(info.firstName, info.role, info.image);
+}
