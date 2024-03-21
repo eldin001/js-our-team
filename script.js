@@ -3,7 +3,7 @@ Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 MILESTONE 0:
 Creare l’array di oggetti con le informazioni fornite. done
 MILESTONE 1:
-Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto done
 MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe */
 
@@ -39,10 +39,20 @@ let employees = [
         image: 'barbara-ramos-graphic-designer.jpg'
     }
 ]
-/* for(let i = 0; i < employees.length; i++) {
+for(let i = 0; i < employees.length; i++) {
     console.log(employees[i].firstName, employees[i].role, employees[i].image);
-} */
-
-for (let info of employees) {
-    console.log(info.firstName, info.role, info.image);
+    let liItem = document.createElement('li');
+    liItem.innerHTML = `Nome: ${employees[i].firstName} <br>
+    Ruolo: ${employees[i].role}<br>
+    Immagine: <img src="img/${employees[i].image}" alt=""> `
+    let ulElement = document.getElementById('ul');
+    ulElement.appendChild(liItem);
+    
 }
+
+/* for (let info of employees) {
+    console.log(info.firstName, info.role, info.image);
+    let cardEl = document.getElementById('card');
+    cardEl.innerHTML += info.firstName;
+}
+ */
