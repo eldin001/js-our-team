@@ -44,14 +44,15 @@ for (let i = 0; i < employees.length; i++) {
     let employee = employees[i];
 
     let card = document.createElement('div');
-    card.classList.add('card', 'card-info')
+    card.classList.add('card')
 
     let imgDiv = document.createElement('div');
     imgDiv.innerHTML = `<img src="img/${employee.image}" alt="">`
-    imgDiv.classList.add('card-info')
+
 
     let cardInfo = document.createElement('div');
-    cardInfo.classList.add('card-info')
+    cardInfo.classList.add('padding', 'card-info')
+
 
     let nameElement = document.createElement('h3');
     nameElement.textContent = employee.firstName;
@@ -69,3 +70,5 @@ for (let i = 0; i < employees.length; i++) {
 
     container.appendChild(card);
 }
+
+
