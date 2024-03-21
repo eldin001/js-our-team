@@ -39,20 +39,33 @@ let employees = [
         image: 'barbara-ramos-graphic-designer.jpg'
     }
 ]
-for(let i = 0; i < employees.length; i++) {
-    console.log(employees[i].firstName, employees[i].role, employees[i].image);
-    let liItem = document.createElement('li');
-    liItem.innerHTML = `Nome: ${employees[i].firstName} <br>
-    Ruolo: ${employees[i].role}<br>
-    Immagine: <img src="img/${employees[i].image}" alt=""> `
-    let ulElement = document.getElementById('ul');
-    ulElement.appendChild(liItem);
-    
-}
 
-/* for (let info of employees) {
-    console.log(info.firstName, info.role, info.image);
-    let cardEl = document.getElementById('card');
-    cardEl.innerHTML += info.firstName;
+for (let i = 0; i < employees.length; i++) {
+    let employee = employees[i];
+
+    let card = document.createElement('div');
+    card.classList.add('card', 'card-info')
+
+    let imgDiv = document.createElement('div');
+    imgDiv.innerHTML = `<img src="img/${employee.image}" alt="">`
+    imgDiv.classList.add('card-info')
+
+    let cardInfo = document.createElement('div');
+    cardInfo.classList.add('card-info')
+
+    let nameElement = document.createElement('h3');
+    nameElement.textContent = employee.firstName;
+
+    let roleElement = document.createElement('p');
+    roleElement.textContent = employee.role;
+
+    cardInfo.appendChild(nameElement);
+    cardInfo.appendChild(roleElement);
+
+    card.appendChild(imgDiv);
+    card.appendChild(cardInfo);
+
+    let container = document.getElementById('container');
+
+    container.appendChild(card);
 }
- */
